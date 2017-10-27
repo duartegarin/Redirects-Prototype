@@ -1,0 +1,8 @@
+<If "req('Host') =~ /au.redirects.com/i">
+  Redirect /oldfile.html http://redirects.dev/test_au.html
+  Redirect /oldfile2.html http://redirects.dev/test_au2.html
+</If>
+<If "req('Host') =~ /nz.redirects.com/i">
+  Redirect /oldfile.html http://redirects.dev/test_nz.html
+  Redirect /oldfile2.html http://redirects.dev/test_nz2.html
+</If>
