@@ -1,10 +1,10 @@
 <If "req('Host') =~ /au.redirects.com/i">
-  Redirect /oldfile.html http://au.redirects.dev/test_au.html
-  Redirect /oldfile2.html http://au.redirects.dev/test_au2.html
-  RedirectMatch (.*) http://au.redirects.dev
+  Redirect 301 /oldfile.html http://au.redirects.dev/test_au.html
+  Redirect 301 /oldfile2.html http://au.redirects.dev/test_au2.html
+  RedirectMatch 301 (.*) http://au.redirects.dev
 </If>
 <If "req('Host') =~ /nz.redirects.com/i">
-  Redirect /oldfile.html http://nz.redirects.dev/test_nz.html
-  Redirect /oldfile2.html http://nz.redirects.dev/test_nz2.html
-  RedirectMatch (.*) http://nz.redirects.dev
+  Redirect 301 /oldfile.html http://nz.redirects.dev/test_nz.html
+  Redirect 301 /oldfile2.html http://nz.redirects.dev/test_nz2.html
+  RedirectMatch 301 (.*) http://nz.redirects.dev
 </If>
